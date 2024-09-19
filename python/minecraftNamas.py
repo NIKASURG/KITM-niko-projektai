@@ -15,7 +15,6 @@ mediena -= stiklas
 # print(5%2)
 # print(4%2== True)
 # print(5%2 == True)
-
 sonoMediena = 0 
 # if z%2== False:
 laikinas = z
