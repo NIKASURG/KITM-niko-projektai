@@ -14,3 +14,4 @@ elif mid - min > max - mid:
 elif  mid - min < max - mid:
         mazat = max - mid
         print('mažiuases atstumas ' + str(max - mid))
+# komentaras
