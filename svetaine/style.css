@@ -1,0 +1,36 @@
+html,
+body {
+    height: 100%;
+
+}
+
+* {
+    margin: 0;
+}
+
+header {
+    
+    background-color: rgb(233, 233, 233);
+}
+
+.foteris {
+    /* width: 100vw; */
+    position: relative;
+    top: 100%;
+    background-color: rgb(233, 233, 233);
+}
+button{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(119, 119, 119);
+}
+button:hover{
+
+    background-color: rgb(212, 212, 212);
+
+}
+.fot_teks{
+    position: relative;
+    left:90%
+
+}
