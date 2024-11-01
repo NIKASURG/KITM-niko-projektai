@@ -1,0 +1,66 @@
+html,body{
+    height: 100%;
+}
+*{
+    margin: 0;
+}
+.borderrrrr{
+    border-style:solid;
+}
+.div0{
+    height: 100%;
+    /* display: flex; */
+
+}
+.div1{
+    height: 20%;
+    display: flex;
+
+}
+.div11{
+    height: 100%;
+    flex: 60%;
+}
+.div12{
+    height: 100%;
+    flex: 40%;
+}
+.div2{
+    height: 60%;
+    display: flex;
+
+}
+.div21{
+    height: 100%;
+    flex:50%
+}
+.div22{
+    height: 100%;
+    flex:50%;
+    display: flex;
+
+    flex-direction: column;
+    
+}
+.div221{
+    height: 100%;
+    flex:50%;
+
+}
+.div222{
+    height: 100%;
+    flex:50%;
+
+}
+.div3{
+    height: 20%;
+    display: flex;
+}
+.div31{
+    flex:20%
+}
+.div32{
+    flex:40%
+}.div33{
+    flex:20%
+}
