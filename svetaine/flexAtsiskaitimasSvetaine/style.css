@@ -18,6 +18,8 @@ html,body{
 
 }
 .div11{
+    flex-direction: column;
+
     height: 100%;
     flex: 60%;
 }

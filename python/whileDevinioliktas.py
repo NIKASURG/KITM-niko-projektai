@@ -6,5 +6,9 @@ while p > reiksPlyt:
     reiksPlyt += auklst
 if reiksPlyt > p:
     reiksPlyt -= auklst  
+    auklst -= 1
 print(reiksPlyt)
-liksNepanaudot = 
+liksNepanaudot = p - reiksPlyt
+print(liksNepanaudot)
+print(auklst)
+print(auklst)
