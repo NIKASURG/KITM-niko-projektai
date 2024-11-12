@@ -15,6 +15,7 @@ div {
 .div3{
     grid-column: 3/5;
 }
+
 .div5{
     grid-column: 6/9;
 }

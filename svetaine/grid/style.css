@@ -9,7 +9,7 @@ div {
 .div0 {
   display: grid;
   height: 100%;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(4, 25%);
   grid-template-rows: 20% 5% 45% 10%;
 }
 .div1,
