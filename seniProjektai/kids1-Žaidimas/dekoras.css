@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    position: relative;
+}
+
+#taškai {
+    position: absolute;
+    top: 5%;
+    left: 87%;
+}
+
+#timer {
+    position: absolute;
+    top: 79%;
+    left: 20%;
+}
+
+#ekranas {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+button {
+    height: 10%;
+    width: 16%;
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    background-color: #2ba0c0;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#parodytikur {
+    position: absolute;
+    left: 60%;
+    top: 70%;
+}
+
+#išiungti {
+    position: absolute;
+    left: 40%;
+    top: 70%;
+}
+
+#BABYMODE {
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    background-color: #d714ce;
+}
+
+#raudonas {
+    position: absolute;
+    left: 30%;
+    top: 60%;
+    background-color: #ff0000;
+}
+
+#žalias {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    background-color: #19a108;
+}
+
+#mėlinas {
+    position: absolute;
+    left: 70%;
+    top: 60%;
+    background-color: #087594e5;
+}
+
+#vertiks {
+    left: 0%;
+    top: 0%;
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+    ;
+}
+
+#hints {
+    left: 80%;
+    top: 20%;
+    position: absolute;
+}
+
+#meniu {
+    left: 70%;
+    top: 80%;
+    position: absolute;
+}
+
+#shop {
+    position: absolute;
+    left: 20%;
+    top: 70%;
+}
+
+#krautuvei {
+    position: absolute;
+    left: 20%;
+    top: 70%;
+}
+
+#pirkti {
+    width: 20%;
+    padding: 3% 6%;
+    position: absolute;
+    left: 20%;
+    top: 43%;
+    background-image: url('Shoppirkinys.png')
+}
+
+#rodytim1,
+#kairėn {
+    position: fixed;
+    height: 100%;
+    width: 33%;
+    left: 0%;
+    top: 0%;
+}
+
+#rodytim2,
+#dešinėn {
+    position: fixed;
+    height: 100%;
+    width: 33%;
+    left: 66%;
+    top: 0%;
+}
+
+#rodytim3,
+#viršun {
+    position: fixed;
+    height: 50%;
+    width: 33%;
+    left: 33%;
+    top: 50%;
+}
+
+#rodytim4,
+#apačion {
+    position: fixed;
+    height: 50%;
+    width: 33%;
+    left: 33%;
+    top: 0%;
+}
+
+#rodytim1,
+#dešinėnm1 {
+    background-color: #48ff00;
+}
+
+#rodytim2 {
+    background-color: #ff0000;
+}
+
+#rodytim3 {
+    background-color: #3700ff;
+}
+
+#rodytim4 {
+    background-color: #d9ff00;
+}
+
+p {
+    color: #4c4a37;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0 0 24px;
+}

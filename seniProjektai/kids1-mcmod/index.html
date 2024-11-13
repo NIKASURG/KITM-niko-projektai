@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modintas serveris</title>
+  <link rel="stylesheet" href="gricd.css">
+  <link rel="stylesheet" href="stilius.css">
+</head>
+
+<body>
+  <div class="parent">
+    <div class="div1">
+      <div class="turinys">
+
+          <h1>Tai mods skirti prisijungti į
+    
+          </h1>
+          <h2>game6.falixserver.net:20375</h2>
+    
+          <button onclick="document.getElementById('link').click()">Atsisiųsti mods paketa</button>
+          <p>jeigu siunčiates mods paketa createXP NEREIKALINGAS </p>
+          <button onclick="document.getElementById('cretexp').click()">CreateXp</button>
+          <a id="cretexp" href="createXP.jar" download hidden></a>
+          <a id="link" href="serveriomods.zip" download hidden></a>
+          <p>Serveryje naudojamas forge 19.2</p>
+          <a href="https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html">
+            <button>FORGE 19.2 link</button>
+          </a>
+    
+          <p>priemu tik pažystamus, kolkas</p>
+    
+          <a href="https://falixnodes.net/start">
+            <button id="dizinasm">Serverio įjungimas</button>
+          </a>
+          <p>Mods dėl pildymo galima siūlyti</p>
+          <a href="https://discord.gg/kmdZSF4jKa">
+            <button id="dizinasm">Discord</button>
+          </a>
+      </div>
+    </div>
+    <div class="div2">
+      <div class="slideshow">
+        <div class="overlay"></div>
+        <img src="chery.png" alt="Nuotrauka 1">
+        <img src="pušys.png" alt="Nuotrauka 2">
+        <img src="džiungles.png" alt="Nuotrauka 3">
+        <img src="medžiai.png" alt="Nuotrauka 4">
+        <img src="tamsu.png" alt="Nuotrauka 5">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      var slideshow = document.querySelector(".slideshow");
+      var images = document.querySelectorAll(".slideshow img");
+      var index = 0;
+      // slideshow.style.backgroundImage = `url(${images[index].attributes.src.value})`;
+      // console.log(slideshow, slideshow.style.backgroundImage);
+
+      setInterval(() => {
+        if (index + 1 >= images.length) {
+          index = 0;
+        } else {
+          index++
+        }
+
+        kartoti(index, images)
+      }, 1500);
+
+      function kartoti(index, images) {
+        images[index].classList.remove("active");
+        index = (index + 1) % images.length;
+        slideshow.style.backgroundImage = `url(${images[index].attributes.src.value})`;
+        images[index].classList.add("active");
+      }
+      // setInterval(function () {
+      //   images[index].classList.remove("active");
+      //   index = (index + 1) % images.length;
+      //   images[index].classList.add("active");
+      // }, 4000)
+
+      // setInterval(kartoti(), 500);
+
+      // function kartoti() {
+      //   images[index].classList.remove("active");
+      //   index = (index + 1) % images.length;
+      //   images[index].classList.add("active");
+      // }
+      // setInterval(function () {
+      //   images[index].classList.remove("active");
+      //   index = (index + 1) % images.length;
+      //   images[index].classList.add("active");
+      // }, 4000)
+    });
+  </script>
+</body>
+
+</html>

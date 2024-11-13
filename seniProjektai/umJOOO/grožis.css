@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    margin: 0;
+    background-image: url(menu_1.png);
+    background-size: cover; /* Užima visą ekrano plotį ir aukštį */
+    background-attachment: fixed; /* Fono paveiksliukas lieka pritvirtintas net slenkant puslapiu */
+  /* cursor: url('pelyte1.png'), auto; */
+}
+
+
+.mainbox {
+    text-align: center;
+    padding: 10%;
+}
+
+.button {
+        padding: 30px 35px;
+        background-image: url(buton.png);
+        background-size: contain; /* Paveiksliukas užims pilną mygtuko dydį */
+    }
+.m1{
+    position: absolute;
+    left: 43%;
+    top: 55%;
+}
+.m2{
+    position: absolute;
+    left: 43%;
+    top: 70%;
+}
+
+/*
+    .mainbox iframe {
+        max-width: 100%;
+        height: auto;
+    };
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+        margin-top: 10%;
+    };
+
+    .button-40 {
+        padding: 10px 20px;
+    }; */ 
+    
+
+
+
+/* #yt {
+    height: 15cm;
+   
+    width: 100%;
+    
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+#ekranas {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.mainbox{    
+    display: block;
+    width: 100%;}
+
+
+.button-40 {
+    background-color: #111827;
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: .2s;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+}
+
+.button-40:hover {
+    background-color: #374151;
+}
+
+.button-40:focus {
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+    .button-40 {
+        padding: .75rem 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #miktukas2 {
+        position: relative;
+        left: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    #miktukas2 {
+        position: relative;
+        left: 50%;
+    }
+} */

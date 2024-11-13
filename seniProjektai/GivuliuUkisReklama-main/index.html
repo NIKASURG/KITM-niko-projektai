@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Givuliu Ūkis</title>
+    <link rel="stylesheet" href="stiliukas.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#exampleModal').modal('show');
+
+            let cendzura = true;
+            let rodyti = document.getElementById("rodyti");
+            let nerodyti = document.getElementById("nerodyti");
+            let pav5 = document.getElementById("pav5");
+            rodyti.addEventListener("click", function () {
+                cendzura = false;
+                cendzuravimas()
+
+            });
+            nerodyti.addEventListener("click", function () {
+                cendzura = true;
+                cendzuravimas()
+            });
+            function cendzuravimas() {
+
+                if (!cendzura) {
+                    pav5.style.filter = "blur(0px)";
+
+
+                } else {
+                    pav5.style.filter = "blur(10px)";
+
+                }
+            }
+
+
+        });
+    </script>
+</head>
+
+<body class=" w-100 h-100">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Įspėjimas</h5>
+
+                </div>
+                <div class="modal-body">
+                    Puslapija yra žiaurių vaizdų. Ar norite jog jie butu cendzuruojami?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="rodyti">Rodyti</button>
+                    <button type="button" class="btn btn-primary" id="nerodyti"
+                        data-bs-dismiss="modal">Cendzuruoti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Džordžo Orvelo  „Gyvulių ūkis“</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Kelios nuorodos</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item mouseon"><a href="https://www.knygos.lt/lt/knygos/gyvuliu-ukis--2021-/"
+                    class="nav-link" >Įsigyti</a></li>
+            <li class="nav-item mouseon" ><a href="https://ibiblioteka.lt/metis/publication?q=y0g1iw29u"
+                    class="nav-link">Bibliotekose</a></li>
+            <li class="nav-item mouseon"><a href="/GivuliuUkisReklama/FAQs" class="nav-link">FAQs</a></li>
+            <li class="nav-item mouseon"><a href="https://youtu.be/R7zAWdd0No4" class="nav-link">Filmukas</a>
+            </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a href="https://www.knygos.lt/lt/knygos/gyvuliu-ukis--2021-/"
+                                    class="nav-link">Įsigyti</a></li>
+                            <li class="nav-item"><a href="https://ibiblioteka.lt/metis/publication?q=y0g1iw29u"
+                                    class="nav-link">Bibliotekose</a></li>
+                            <li class="nav-item"><a href="/GivuliuUkisReklama/FAQs" class="nav-link">FAQs</a></li>
+                            <li class="nav-item"><a href="https://youtu.be/R7zAWdd0No4" class="nav-link">Filmukas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <div class="bg-image"> -->
+    <!-- </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">Kodėl turėtumėte persakityti Givuliu Ūkį?</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="nav nav-pills">
+                            <!-- <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Pradžia</a></li> -->
+                            <!-- <li class="nav-item"><a href="https://www.knygos.lt/lt/knygos/gyvuliu-ukis--2021-/"
+                                    class="nav-link">Įsigyti</a></li>
+                            <li class="nav-item"><a href="https://ibiblioteka.lt/metis/publication?q=y0g1iw29u"
+                                    class="nav-link">Bibliotekose</a></li>
+                            <li class="nav-item"><a href="/GivuliuUkisReklama/FAQs" class="nav-link">FAQs</a></li>
+                            <li class="nav-item"><a href="https://youtu.be/R7zAWdd0No4" class="nav-link">Filmukas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    -->
+    
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="g-col-6 border shadow-lg">
+                <div class="container overflow-hidden text-center">
+                    <div class="row gx-5">
+                        <div class="col">
+                            <div class="p-3">
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3"> <img src="pav1.jpeg" class="opacity-75 rounded-2 shadow-lg"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="g-col-6 border shadow-lg">
+                <div class="container overflow-hidden text-center">
+                    <div class="row gx-5">
+                        <div class="col">
+                            <div class="p-3">
+
+                                <div class="p-3"> <img class="opacity-75 w-50 h-50 rounded-5 shadow-lg"
+                                        src="pav3.jpeg"></img></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3">
+
+                                <div class='textBack'>
+                                    <p class="text">Ar norite pasinerti į pasaulį, kur gyvuliai svajoja apie laisvę
+                                        ir lygybę? Džordžo
+                                        Orvelo „Gyvulių ūkis“ - tai alegorinė pasaka, kuri atskleidžia žmonijos
+                                        trūkumus ir politinių
+                                        sistemų silpnybes. Šis nepaprastai aktualus kūrinys privers susimąstyti apie
+                                        mūsų pačių
+                                        visuomenę ir
+                                        jos principus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="g-col-6 border shadow-lg">
+                <div class="container overflow-hidden text-center">
+                    <div class="row gx-5">
+                        <div class="col">
+                            <div class="p-3">
+
+                                <div class='textBack'>
+
+                                    <p class="text">Knygoje „Gyvulių ūkis“ susidursite su charizmatiškais
+                                        personažais, tokiais kaip
+                                        Napoleonas ir Sniegius, kurie simbolizuoja tikrus istorinius veikėjus ir jų
+                                        kovą dėl valdžios.
+                                        Orvelo meistriškas pasakojimas ir simbolika sukuria įtaigią ir įsimintiną
+                                        istoriją, kuri
+                                        nepaliks abejingų.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3">
+
+                                <div class="p-3"> <img id="pav4" class="opacity-75 w-75 h-75 rounded-5"
+                                        src="pav4.jpeg"></img></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="g-col-6 border shadow-lg">
+                <div class="container overflow-hidden text-center">
+                    <div class="row gx-5">
+                        <div class="col">
+                            <div class="p-3">
+
+                                <div class="p-3"> <img id="pav5" class="opacity-75 w-100 h-100 rounded-1"
+                                        src="pav5.jpeg"></img></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3">
+
+                                <div class='textBack'>
+
+                                    <p class="text">Šis kūrinys - tai ne tik įdomi istorija, bet ir gilus politinis
+                                        ir socialinis
+                                        komentaras, kurio aktualumas neblėsta. Tai puiki knyga visiems, norintiems
+                                        geriau suprasti
+                                        totalitarizmo mechanizmus ir žmogaus prigimties sudėtingumą.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="g-col-6 border shadow-lg">
+                <div class="container overflow-hidden text-center">
+                    <div class="row gx-5">
+                        <div class="col">
+                            <div class="p-3">
+
+                                <div class='textBack'>
+
+                                    <p class="text">Nesvarbu, ar esate literatūros entuziastas, ar tiesiog ieškote
+                                        knygos, kuri
+                                        praturtintų jūsų pasaulėžiūrą, „Gyvulių ūkis“ yra idealus pasirinkimas.
+                                        Atraskite šį nesenstantį
+                                        šedevrą ir leiskitės į nepaprastą kelionę per gyvulių revoliucijos ir
+                                        valdžios žlugimo istoriją.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3">
+
+                                <div class="p-3"> <img class="opacity-75 w-50 h-50 rounded-1" src="pav6.jpeg"></img>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="g-col-6 border shadow-lg">
+                <div class="container overflow-hidden text-center">
+                    <div class="row gx-5">
+                        <div class="col">
+                            <div class="p-3">
+
+                                <div class="p-3"> <img class="opacity-75 w-100 h-100 rounded-1" src="pav2.jpeg"></img>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3">
+
+                                <div class='textBack'>
+
+                                    <p class="text">Nepraleiskite progos perskaityti šį literatūros perlą! Įsigykite
+                                        „Gyvulių ūkį“ jau
+                                        šiandien ir atraskite, kodėl ši knyga yra viena iš svarbiausių XX amžiaus
+                                        kūrinių.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="col-6 border shadow-lg" ><img src="pav1.jpeg" class="rounded mx-auto d-block w-100">
+                </img> -->
+        </div>
+        <div class="container-fluid border shadow-lg">
+            <h2>
+                Animacija sukurta pagal knyga
+            </h2>
+            <iframe class="figure-img rounded shadow-lg w-100 h-100 d-inline-block mouseon"
+                src="https://www.youtube-nocookie.com/embed/R7zAWdd0No4?si=Yp4DZ9bgCKbvUCI1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <p class="text-center text-body-secondary">© 2024 Nikas Surgautas IIa</p>
+
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"></a></li>
+                <li class="nav-item"><a href="https://github.com/NIKASURG" class="nav-link px-2 text-body-secondary">
+                        <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24"
+                            data-view-component="true" class="octicon octicon-mark-github">
+                            <path
+                                d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="nav-item"><a href="/GivuliuUkisReklama/FAQs" class="nav-link px-2 text-body-secondary"><svg
+                            xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="24" height="24">
+                            <path
+                                d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Zm0,22A10,10,0,1,1,22,12,10.011,10.011,0,0,1,12,22Z" />
+                            <path
+                                d="M12.717,5.063A4,4,0,0,0,8,9a1,1,0,0,0,2,0,2,2,0,0,1,2.371-1.967,2.024,2.024,0,0,1,1.6,1.595,2,2,0,0,1-1,2.125A3.954,3.954,0,0,0,11,14.257V15a1,1,0,0,0,2,0v-.743a1.982,1.982,0,0,1,.93-1.752,4,4,0,0,0-1.213-7.442Z" />
+                            <rect x="11" y="17" width="2" height="2" rx="1" />
+                        </svg></a></li>
+                <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"></a></li> -->
+                <li class="nav-item"><a href="https://x.com/surgautas" class="nav-link px-2 text-body-secondary">
+                        <svg style="color: red;" aria-hidden="true" height="24"
+                            viewBox="0 0 24 24                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "
+                            version="1.1" width="24" data-view-component="true" class="octicon octicon-mark-github">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+
+
+            </ul>
+        </footer>
+
+        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Spalva
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
+                <li><a class="dropdown-item" id="sv">Šviesus</a></li>
+                <li><a class="dropdown-item" id="ta">Tamsus</a></li>
+                <li><a class="dropdown-item" id="kr">Kruvinas</a></li>
+                <li><a class="dropdown-item" id="at">Atsitiktinis</a></li>
+                <li><p>Spalvu keitimas buvo padarytas greitai, nemuškit dėl prasto funkcionalumo ar šlamštiško kodo.</p></li>
+            </ul>
+        </div>
+
+</body>
+
+</html>
