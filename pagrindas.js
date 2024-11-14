@@ -38,35 +38,35 @@ window.addEventListener("load", function () {
 
   // Naudojimo pavyzdys
   new Kaladele({
-    saltinis: "/seniProjektai/farm-shooter-slifavimas",
+    saltinis: "./seniProjektai/farm-shooter-slifavimas",
     aprasas:
       "Tai yra lapiu genocido žaidimas kurį kurėme kartu su programavimo bureliu",
-    paveiksliuka: "/seniProjektai/paveiksliukai/lapiuSaudykle.png",
+    paveiksliuka: "./seniProjektai/paveiksliukai/lapiuSaudykle.png",
   });
   new Kaladele({
-    saltinis: "/seniProjektai/kids1-Žaidimas",
+    saltinis: "./seniProjektai/kids1-Žaidimas",
     aprasas: "Tai yra mano pirmasis žaidimas padarytas su JS",
-    paveiksliuka: "/seniProjektai/paveiksliukai/firstGame.png",
+    paveiksliuka: "./seniProjektai/paveiksliukai/firstGame.png",
   });
   new Kaladele({
-    saltinis: "/seniProjektai/discordProfiliniuGalerije-main",
+    saltinis: "./seniProjektai/discordProfiliniuGalerije-main",
     aprasas: "Tai yra svetaine kueioje dokumentuojamos mano discord profilines",
-    paveiksliuka: "/seniProjektai/paveiksliukai/galerija.png",
+    paveiksliuka: "./seniProjektai/paveiksliukai/galerija.png",
   });
   new Kaladele({
-    saltinis: "/seniProjektai/umJOOO",
+    saltinis: "./seniProjektai/umJOOO",
     aprasas: "Tai yra projektas kur turi vesti komandas ir judinti personaža",
-    paveiksliuka: "/seniProjektai/paveiksliukai/uhhhh.png",
+    paveiksliuka: "./seniProjektai/paveiksliukai/uhhhh.png",
   });
   new Kaladele({
-    saltinis: "/seniProjektai/kids1-mcmod",
+    saltinis: "./seniProjektai/kids1-mcmod",
     aprasas: "Tai yra vieta kurioje laikomi privalomi minecraft serverio modai",
-    paveiksliuka: "/seniProjektai/paveiksliukai/minecraft.png",
+    paveiksliuka: "./seniProjektai/paveiksliukai/minecraft.png",
   });
   new Kaladele({
-    saltinis: "/seniProjektai/GivuliuUkisReklama-main",
+    saltinis: "./seniProjektai/GivuliuUkisReklama-main",
     aprasas: "Tai yra reklama knygai Givulių Ūkis",
-    paveiksliuka: "/seniProjektai/paveiksliukai/ukis.png",
+    paveiksliuka: "./seniProjektai/paveiksliukai/ukis.png",
   });
 
   let sukimas = 1;
