@@ -1,7 +1,40 @@
-:root {
-    color-scheme: light dark;
-  }
-  body {
-    color: light-dark(#333b3c, #efefec);
-    background-color: light-dark(#efedea, #223a2c);
-  }
+html {
+  color-scheme: light dark;
+}
+html,
+body {
+  height: 100%;
+  color: light-dark(#333b3c, #efefec);
+  background-color: light-dark(#efedea, #1a251f);
+}
+.start {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#PirTekstas {
+  font-size: 300%;
+}
+#content1 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.senuProjektuDezute {
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+  border: light-dark(#1a251f, #efedea);
+  border-style: groove;
+  width: 20%;
+  height: 10%;
+  filter: blur(2px);
+  transition: 0.2s;
+}
+.senuProjektuDezute:hover {
+  height: 15%;
+  filter: blur(0);
+}
