@@ -4,8 +4,10 @@ html {
 html,
 body {
   height: 100%;
-  color: light-dark(#333b3c, #efefec);
   background-color: light-dark(#efedea, #1a251f);
+}
+.prisitaikantisTekst {
+  color: light-dark(#333b3c, #efefec);
 }
 .start {
   height: 100%;
@@ -26,6 +28,7 @@ body {
   background-repeat: no-repeat, repeat;
   background-size: cover;
   background-position: center;
+  color: light-dark(#edf1f1, #efefec);
 
   border: light-dark(#1a251f, #efedea);
   border-style: groove;
@@ -33,8 +36,39 @@ body {
   height: 10%;
   filter: blur(2px);
   transition: 0.2s;
+  box-shadow: 5px 10px 10px light-dark(#1a251f, #303030);
 }
 .senuProjektuDezute:hover {
   height: 15%;
   filter: blur(0);
+}
+p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+#content2 {
+  height: 100%;
+  margin: 2%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
+}
+.pitonoKodoDezute {
+  background-color: rgb(79, 129, 196);
+  height: 100%;
+  transition: 0.2s;
+  box-shadow: 5px 10px 10px light-dark(#1a251f, #303030);
+  border: light-dark(#1a251f, #efedea);
+  border-style: groove;
+}
+.pitonoKodoDezute:hover {
+  height: 120%;
 }
