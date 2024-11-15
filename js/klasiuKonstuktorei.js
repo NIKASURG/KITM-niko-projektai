@@ -37,7 +37,7 @@ class svetainesDarbai {
     this.naujasParagrafas.textContent = aprasas;
     this.naujasDiv.appendChild(this.naujasParagrafas);
 
-    content2.appendChild(this.naujasDiv);
+    content3.appendChild(this.naujasDiv);
 
     this.naujasDiv.addEventListener("click", function () {
       window.location.href = saltinis;

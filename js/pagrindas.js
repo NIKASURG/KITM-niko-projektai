@@ -27,6 +27,7 @@ window.addEventListener("load", function () {
 
   projektai.forEach((i) => new Kaladele(i));
   pyDarbai.forEach((i) => new Python(i));
+  svetaines.forEach((i) => new svetainesDarbai(i));
 
   let sukimas = 1;
   let miegas = 0;

@@ -198,3 +198,46 @@ const pyDarbai = [
     aprasas: "Atsiskaitymas užd Nr3",
   },
 ];
+const svetaines = [
+  {
+    saltinis: "./svetaine/nebereikalingos_svetaines/HTML/index.html",
+    aprasas: "Pirmojo atsiskaitymo index svetainė",
+  },
+  {
+    saltinis: "./svetaine/nebereikalingos_svetaines/HTML/nexus.html",
+    aprasas: "Nexus, mes pasakome ateitį ",
+  },
+  {
+    saltinis: "./svetaine/nebereikalingos_svetaines/HTML/darSugalvosiu.html",
+    aprasas: "Nebuvo idėju tai padariau žaidima",
+  },
+  {
+    saltinis:
+      "./svetaine/nebereikalingos_svetaines/atmestos_svetaines/index.html",
+    aprasas: "Pirmojo atsiskaitymo svetaine kuri man nepatiko",
+  },
+  {
+    saltinis: "./svetaine/grid/index.html",
+    aprasas: "Darbas su grid",
+  },
+  {
+    saltinis: "./svetaine/grid/antras.html",
+    aprasas: "cooler Darbas su grid",
+  },
+  {
+    saltinis: "./svetaine/flexAtsiskaitimasSvetaine/index.html",
+    aprasas: "Darbas per atostogas su flex",
+  },
+  {
+    saltinis: "./svetaine/divFlex/index.html",
+    aprasas: "Mokausi naudoti flex",
+  },
+  {
+    saltinis: "./svetaine/divFlex/flex2.html",
+    aprasas: "Mokausi naudoti flex 2",
+  },
+  {
+    saltinis: "./svetaine/divFlex/flex3.html",
+    aprasas: "Mokausi naudoti flex 3 BLOGIO IŠKILIMAS",
+  },
+];

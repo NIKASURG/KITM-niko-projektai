@@ -5,6 +5,7 @@ html,
 body {
   height: 100%;
   background-color: light-dark(#efedea, #1a251f);
+  margin: 0;
 }
 .prisitaikantisTekst {
   color: light-dark(#333b3c, #efefec);
@@ -65,10 +66,13 @@ p::after {
   background-color: rgb(79, 129, 196);
   height: 100%;
   transition: 0.2s;
-  box-shadow: 5px 10px 10px light-dark(#1a251f, #303030);
-  border: light-dark(#1a251f, #efedea);
+  box-shadow: 5px 10px 10px light-dark(#30443e, #303030);
+  border: light-dark(#3e8b89, #efedea);
   border-style: groove;
 }
 .pitonoKodoDezute:hover {
   height: 120%;
+}
+#content3 {
+  height: 100%;
 }
