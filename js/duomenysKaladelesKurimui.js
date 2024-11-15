@@ -185,16 +185,16 @@ const pyDarbai = [
     aprasas: "Žiemojantys paukščiai",
   },
   {
-    saltinis: "./python/Atsiskaitumas/pirmas.py",
+    saltinis: "./python/Atsiskaitymas/pirmas.py",
     aprasas: "Atsiskaitymas užd Nr1",
   },
   {
-    saltinis: "./python/Atsiskaitumas/antras.py",
+    saltinis: "./python/Atsiskaitymas/antras.py",
     aprasas: "Atsiskaitymas užd Nr2",
   },
 
   {
-    saltinis: "./python/Atsiskaitumas/trecias.py",
+    saltinis: "./python/Atsiskaitymas/trecias.py",
     aprasas: "Atsiskaitymas užd Nr3",
   },
 ];
