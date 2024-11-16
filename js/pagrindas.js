@@ -31,12 +31,9 @@ window.addEventListener("load", function () {
 
   let sukimas = 1;
   let miegas = 0;
-  let ePlotis = window.innerWidth;
-  let keistiTeksta = true;
   function rasytTeksta(tekstas) {
     pradziosTekst.innerHTML = tekstas;
   }
-
   // debugger;
   rasytTeksta(rasomTeks[sukimas]);
 

@@ -59,14 +59,14 @@ p::after {
   justify-content: center;
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(10, 10%);
+  grid-template-columns: repeat(9, 11.11%);
   grid-template-rows: repeat(10, 10%);
 }
 .pitonoKodoDezute {
   background-color: rgb(79, 129, 196);
   height: 100%;
   transition: 0.2s;
-  box-shadow: 5px 10px 10px light-dark(#30443e, #303030);
+  box-shadow: 5px 10px 100px light-dark(#30443e, #303030);
   border: light-dark(#3e8b89, #efedea);
   border-style: groove;
 }
@@ -75,4 +75,23 @@ p::after {
 }
 #content3 {
   height: 100%;
+  display: grid;
+
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
+}
+.svetainesDezute {
+  background-color: light-dark(#f06529, #e34c26);
+  margin: 2px;
+  height: 100%;
+  transition: 0.2s;
+  box-shadow: 5px 10px 50px light-dark(#2b1811, #24100b);
+  border: light-dark(#e34c26, #f06529);
+  border-style: solid;
+}
+.svetainesDezute:hover {
+  height: 120%;
+}
+.iStart {
+  color: #eef4fb;
 }
