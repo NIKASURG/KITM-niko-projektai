@@ -134,7 +134,7 @@ h3 {
 }
 .naviguoti {
   font-size: xx-large;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 50px;
 }
 #navigacijosKonteineris {
   flex-direction: column;
@@ -151,4 +151,12 @@ h3 {
   color: light-dark(#000000, #285486);
   font-size: 150%;
   text-decoration: underline;
+}
+.apMa {
+  height: 60%;
+  margin: 100px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 30% 5%;
 }

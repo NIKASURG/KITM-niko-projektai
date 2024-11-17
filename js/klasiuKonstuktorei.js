@@ -7,11 +7,10 @@ class Kaladele {
     this.naujasDiv.style.backgroundImage = `url(${paveiksliuka})`;
     this.naujasDiv.appendChild(this.naujasParagrafas);
 
-    content1.appendChild(this.naujasDiv);
-
     this.naujasDiv.addEventListener("click", function () {
       window.location.href = saltinis;
     });
+    content1.appendChild(this.naujasDiv);
   }
 }
 class Python {
@@ -22,11 +21,10 @@ class Python {
     this.naujasParagrafas.textContent = aprasas;
     this.naujasDiv.appendChild(this.naujasParagrafas);
 
-    content2.appendChild(this.naujasDiv);
-
     this.naujasDiv.addEventListener("click", function () {
       window.location.href = saltinis;
     });
+    content2.appendChild(this.naujasDiv);
   }
 }
 class svetainesDarbai {
@@ -37,10 +35,18 @@ class svetainesDarbai {
     this.naujasParagrafas.textContent = aprasas;
     this.naujasDiv.appendChild(this.naujasParagrafas);
 
-    content3.appendChild(this.naujasDiv);
-
     this.naujasDiv.addEventListener("click", function () {
       window.location.href = saltinis;
     });
+    content3.appendChild(this.naujasDiv);
+  }
+}
+class navigacija {
+  constructor({ e }) {
+    this.naujeNavigacija = document.createElement("a");
+    this.naujeNavigacija.textContent = e.innerHTML;
+    this.naujeNavigacija.className = "navTekstas";
+    this.naujeNavigacija.href = "#" + e.id;
+    navigacijosKonteineris.appendChild(this.naujeNavigacija);
   }
 }

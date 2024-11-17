@@ -1,3 +1,25 @@
+const rasomTeks = [
+  "",
+  "SVEIKI ATVYKE Į MANO SVETAINE APIE MANE",
+  "Nepamiršk pasisveikint, čia visada draugiški žmonės :)",
+  "Jauti? Tai draugystės ir geros nuotaikos dvelksmas!",
+  "JŪS VISADA ČIA LAUKEMAS",
+  "NEBENT NESI",
+  "TADA NELAUKEM TAVES ):",
+  "TIKIOSI GRYŠI ):",
+  "undefined",
+  "Pagalvojot tai klaida :P",
+  "Mes nerenkame jūsų duomenų",
+  "GAL...",
+  "Ar aš sakiau tu nelaukemas?",
+  "Juokavau, tu esi nuostabus",
+  "KĄ Tu Ką vAkaRe",
+  "Geros dienos",
+  "Ar jau radai savo mėgstamą kampelį šioje svetainėje?",
+  "Sako, geriausi nuotykiai prasideda nuo smalsumo!",
+  "Tu esi nuostab(us) - i ",
+  "Džiaukis savimi",
+];
 const projektai = [
   {
     saltinis: "./seniProjektai/farm-shooter-slifavimas",
