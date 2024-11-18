@@ -8,6 +8,10 @@ body {
   background-color: light-dark(#efedea, #1a251f);
   margin: 0;
 }
+.bd {
+  height: 100vh;
+}
+
 .prisitaikantisTekst {
   color: light-dark(#333b3c, #efefec);
 }
@@ -48,7 +52,7 @@ body {
   filter: blur(0);
   z-index: 2;
 }
-p::after {
+.parDez::after {
   content: "";
   position: absolute;
   top: 0;
@@ -136,19 +140,27 @@ h3 {
   font-size: xx-large;
   scroll-margin-top: 80px;
 }
-#navigacijosKonteineris {
-  flex-direction: column;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .navTekstas {
+  margin: 5px;
+
   color: light-dark(#003530bb, #f7f6f6);
   text-decoration: none;
 }
 .navTekstas:hover {
   color: light-dark(#000000, #285486);
-  font-size: 150%;
+  /* font-size: 150%; */
   text-decoration: underline;
+}
+.lipNav {
+  position: sticky;
+  top: 0;
+  /* margin: 10px; */
+  background-color: light-dark(#cbcccb, #223f1f);
+  /* flex-direction: column; */
+  height: 50px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  z-index: 50;
 }

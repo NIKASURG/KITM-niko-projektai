@@ -4,9 +4,11 @@ html {
 }
 html,
 body {
-  height: 100%;
   background-color: light-dark(#efedea, #1a251f);
   margin: 0;
+}
+.bd {
+  height: 100vh;
 }
 .prisitaikantisTekst {
   color: light-dark(#333b3c, #efefec);
@@ -48,7 +50,7 @@ body {
   filter: blur(0);
   z-index: 2;
 }
-p::after {
+/* p::after {
   content: "";
   position: absolute;
   top: 0;
@@ -57,7 +59,7 @@ p::after {
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: -1;
-}
+} */
 #content2 {
   height: 100%;
   margin: 5%;
@@ -136,20 +138,15 @@ h3 {
   font-size: xx-large;
   scroll-margin-top: 50px;
 }
-#navigacijosKonteineris {
-  flex-direction: column;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .navTekstas {
+  margin: 5px;
   color: light-dark(#003530bb, #f7f6f6);
   text-decoration: none;
 }
 .navTekstas:hover {
-  color: light-dark(#000000, #285486);
-  font-size: 150%;
+  color: light-dark(#000000, #6cb1ff);
+  /* font-size: 150%; */
   text-decoration: underline;
 }
 .apMa {
@@ -159,4 +156,16 @@ h3 {
   justify-content: center;
   align-items: center;
   grid-template-rows: 30% 5%;
+}
+.lipNav {
+  position: sticky;
+  top: 0;
+  /* margin: 10px; */
+  background-color: light-dark(#cbcccb, #223f1f);
+  /* flex-direction: column; */
+  height: 50px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  z-index: 50;
 }

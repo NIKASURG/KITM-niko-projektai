@@ -2,6 +2,7 @@ class Kaladele {
   constructor({ saltinis, aprasas, paveiksliuka }) {
     this.naujasDiv = document.createElement("div");
     this.naujasParagrafas = document.createElement("p");
+    this.naujasParagrafas.className = "parDez";
     this.naujasDiv.className = "senuProjektuDezute";
     this.naujasParagrafas.textContent = aprasas;
     this.naujasDiv.style.backgroundImage = `url(${paveiksliuka})`;

@@ -17,6 +17,8 @@ window.addEventListener("load", function () {
   rasytTeksta(rasomTeks[sukimas]);
 
   function mainRatas() {
+    document.body.style.height = document.body.scrollHeight + "px";
+
     if (sukimas < rasomTeks.length - 1 && miegas > 100) {
       sukimas++;
 
