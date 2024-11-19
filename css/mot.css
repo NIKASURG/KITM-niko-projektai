@@ -180,3 +180,7 @@ h3 {
   align-items: center;
   z-index: 50;
 }
+img {
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px light-dark(#1a251f, #666666);
+}
