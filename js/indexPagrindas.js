@@ -4,7 +4,10 @@ window.addEventListener("load", function () {
     "navigacijosKonteineris"
   );
   const naviguotiI = document.getElementsByClassName("naviguoti");
+  const slepkNav = document.getElementsByClassName("slepkNav");
+  // slepkNav.addEventListener("click",e){
 
+  // };
   let sukimas = 1;
   for (const e of naviguotiI) {
     new navigacija({ e: e });

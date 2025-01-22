@@ -108,6 +108,17 @@ hr {
   color: light-dark(#333b3c, #efefec);
   font-size: xx-large;
 }
+#slepkNav {
+  display: none;
+}
+@media (500px > width) {
+  .iStart {
+    grid-column: 8/11;
+  }
+  #slepkNav {
+    display: block;
+  }
+}
 .iStart:hover {
   text-decoration: underline;
 }
@@ -142,10 +153,11 @@ h3 {
 .apMa {
   height: 60%;
   margin: 100px;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
-  grid-template-rows: 30% 5%;
+  flex-direction: column;
+  /* grid-template-rows: 30% 5%; */
 }
 .lipNav {
   position: sticky;
@@ -153,14 +165,26 @@ h3 {
   /* margin: 10px; */
   background-color: light-dark(#cbcccb, #223f1f);
   /* flex-direction: column; */
-  height: 50px;
+  height: 2.5%;
   display: flex;
   justify-content: right;
   align-items: center;
   z-index: 50;
 }
-@media (500px <= width) {
+.atitraukti {
+  display: flex;
+}
+@media (500px > width) {
+  .atitraukti {
+    display: none;
+    height: 70%;
+    /* display: flex; */
+    flex-direction: column;
+  }
   .lipNav {
-    /* height: 150px; */
+    height: auto;
+    flex-direction: column;
+    align-items: end;
+    opacity: 0.8;
   }
 }

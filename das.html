@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimized Prime Numbers</title>
+</head>
+<body>
+    <script>
+        const kiekReike = 10 ** 8; // Sumažintas diapazonas bandymams
+        const pirminei = [];
+        const isPrime = Array(kiekReike).fill(true);
+
+        isPrime[0] = isPrime[1] = false; // 0 ir 1 nėra pirminiai skaičiai
+
+        for (let i = 2; i < Math.sqrt(kiekReike); i++) {
+            if (isPrime[i]) {
+                for (let j = i * i; j < kiekReike; j += i) {
+                    isPrime[j] = false;
+                }
+            }
+        }
+
+        for (let i = 2; i < kiekReike; i++) {
+            if (isPrime[i]) {
+                pirminei.push(i);
+            }
+        }
+
+        console.log(pirminei);
+    </script>
+</body>
+</html>

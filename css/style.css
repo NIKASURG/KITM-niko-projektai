@@ -68,8 +68,15 @@ body {
   justify-content: center;
   align-items: center;
   display: grid;
+
   grid-template-columns: repeat(9, 11.11%);
   grid-template-rows: repeat(10, 10%);
+}
+@media (500px > width) {
+  #content2 {
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(15, 6%);
+  }
 }
 .pitonoKodoDezute {
   background-color: rgb(79, 129, 196);
@@ -89,6 +96,12 @@ body {
 
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(10, 10%);
+}
+@media (500px > width) {
+  #content3 {
+    grid-template-columns: repeat(3, 33%);
+    /* height: auto; */
+  }
 }
 .svetainesDezute {
   background-color: light-dark(#f06529, #e34c26);
@@ -119,6 +132,14 @@ hr {
   grid-column: 10/11;
   color: light-dark(#333b3c, #efefec);
   font-size: xx-large;
+}
+@media (500px > width) {
+  .iStart {
+    grid-column: 8/11;
+  }
+  #slepkNav {
+    display: none;
+  }
 }
 .iStart:hover {
   text-decoration: underline;

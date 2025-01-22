@@ -47,6 +47,8 @@ class navigacija {
     this.naujeNavigacija = document.createElement("a");
     this.naujeNavigacija.textContent = e.innerHTML;
     this.naujeNavigacija.className = "navTekstas";
+    this.naujeNavigacija.className = "atitraukti";
+
     this.naujeNavigacija.href = "#" + e.id;
     navigacijosKonteineris.appendChild(this.naujeNavigacija);
   }
